@@ -272,7 +272,7 @@ class AcceptPagestate extends State<AcceptPage> {
           Align(
             alignment: Alignment(0, 0.8),
             child: InkWell(
-              onTap: (_isChecked2 && _isChecked3 && _isChecked4 && _isChecked5)
+              onTap: (_isChecked2 && _isChecked3)
                   ? () {
                       print("회원가입버튼클릭");
                       showDialog(

@@ -1,5 +1,6 @@
+import 'package:f_neon/Register.dart';
 import 'package:flutter/material.dart';
-import 'login.dart'; // LoginPage 클래스가 있는 파일 import
+import 'Register.dart'; // LoginPage 클래스가 있는 파일 import
 //import 'package:f_neon/accept.dart';
 
 void main() {
@@ -14,7 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Login Demo',
       theme: ThemeData(primarySwatch: Colors.red),
-      home: const LoginPage(), // 여기에 LoginPage 연결!
+      home: const Register(), // 여기에 LoginPage 연결!
       debugShowCheckedModeBanner: false, // 상단 debug 배너 제거
     );
   }
