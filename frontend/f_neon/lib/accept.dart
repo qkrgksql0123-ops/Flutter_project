@@ -1,4 +1,7 @@
+import 'package:f_neon/Register.dart';
+import 'package:f_neon/Register_Ok.dart';
 import 'package:flutter/material.dart';
+import 'package:f_neon/accept.dart';
 
 class AcceptPage extends StatefulWidget {
   const AcceptPage({super.key});
@@ -336,6 +339,12 @@ class AcceptPagestate extends State<AcceptPage> {
                                       child: InkWell(
                                         onTap: () {
                                           print("확인");
+                                          Navigator.push(
+                                            context,
+                                            MaterialPageRoute(
+                                              builder: (context) => Register(),
+                                            ),
+                                          );
                                         },
                                         child: Container(
                                           alignment: Alignment.center,

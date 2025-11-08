@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:f_neon/accept.dart';
 
 class LoginPage extends StatelessWidget {
-  const LoginPage({super.key});
+  LoginPage({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -50,6 +50,9 @@ class LoginPage extends StatelessWidget {
     );
   }
 
+  TextEditingController idController = TextEditingController();
+  TextEditingController pwController = TextEditingController();
+
   Widget id() {
     return Align(
       child: Column(
@@ -58,6 +61,7 @@ class LoginPage extends StatelessWidget {
             width: 500,
             height: 50,
             child: TextField(
+              controller: idController,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.circular(12),
@@ -79,6 +83,7 @@ class LoginPage extends StatelessWidget {
             width: 500,
             height: 50,
             child: TextField(
+              controller: pwController,
               obscureText: true,
               decoration: InputDecoration(
                 border: OutlineInputBorder(
@@ -101,7 +106,7 @@ class LoginPage extends StatelessWidget {
             onTap: () {
               Navigator.push(
                 context,
-                MaterialPageRoute(builder: (context) => AcceptPage()),
+                MaterialPageRoute(builder: (context) => const AcceptPage()),
               );
               print('로그인2');
             },
